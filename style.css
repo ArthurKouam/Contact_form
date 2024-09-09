@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "karla-italic";
+    src: url("assets/fonts/Karla-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "karla-variable";
+    src: url("assets/fonts/Karla-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(210, 231, 250);
+    height: 100%;
+}
+
+.container{
+    width: 100vw;
+    
+    background-color: rgb(210, 231, 250);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.attribution{
+    background-color: white;
+    width: 35%;
+    height: max-content;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+input[type="text"], textarea{
+    border-radius: 5px;
+    padding-left: 7px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+input[type="text"]{
+    height: 35px;
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+    padding-top: 8px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "karla-italic";
+}
+
+.corps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "karla-variable";
+}
+
+.corps div{
+    width: 100%;
+}
+
+button{
+    height: 40px;
+    background-color: hsl(172, 45%, 44%);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    background-color: hsl(172, 89%, 27%);
+}
+
+.input-responsive{
+    width: 50%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .attribution{
+        width: 80%
+    }
+    .flex-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-responsive{
+        width: 100%;
+    }
+}

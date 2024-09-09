@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution, .attrib { font-size: 12px;}
+    .attrib{background-color: rgb(210, 231, 250); padding-bottom: 5px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .el{display: grid; align-items: center; border-radius: 5px; padding-left: 5px;}
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div></div>
+    <div class="attribution" name="myform">
+      <h2>Contact Us</h2><br><br>
+      <div class="corps">
+        <div style="width: 100%; display: flex; gap: 10px;" class="flex-responsive">
+          <span class="input-responsive">
+            <label for="first">First name *</label><br><br>
+            <input type="text" name="" id="first" class="pointer"><br>
+            <span class="error" id="item0">This field is required</span>
+          </span>
+          <span class="input-responsive">
+            <label for="last">Last name *</label><br><br>
+            <input type="text" name="" id="last" class="pointer"><br>
+            <span class="error" id="item1">This field is required</span>
+          </span>
+        </div>
+
+        <div>
+          <label for="email">Email Address *</label><br><br>
+          <input type="text" name="" id="email" class="pointer"><br>
+          <span class="error" id="item2">please enter a valid email address</span>
+        </div>
+
+        <div>
+          <div>Query type *</div><br>
+          <div>
+            <div style="display: flex; gap: 10px; width: 100%;" class="flex-responsive">
+              <span class="el input-responsive pointer" style="border: 1px solid black; height: 40px;"><span style="display: flex; align-items: center;"><input type="radio" name="query" id="general" style="margin-right: 12px;"><span>General Enquary</span></span></span>
+              <span class="el input-responsive pointer" style="border: 1px solid black; height: 40px;"><span style="display: flex; align-items: center;"><input type="radio" name="query" id="support" style="margin-right: 12px;"><span>Support Request</span></span></span>
+            </div>
+            <span class="error" id="item5">Please select a query type</span>
+          </div>
+        </div>
+        <div>
+          <label for="message">Message *</label><br><br>
+          <textarea name="" id="textarea" class="pointer"></textarea><br>
+          <span class="error" id="item3">This field is required</span>
+        </div>
+        <div>
+          <span class="pointer" style="display: flex; align-items: center;"><input class="pointer" type="checkbox" name="" id="check" style="margin-right: 12px;"> I content to being contacted by team *</span><br>
+          <span class="error" id="item4">To submit this form, please confirm to being contacted</span>
+        </div>
+        <button onclick="verify()">Submit</button>
+      </div>
+    </div>
+
+    <div class="attrib"> 
+      Coded by <a href="https://portfolio-kouam.vercel.app/">Arthur Kouam</a>.
+    </div>
+  </section>
+ 
+</body>
+</html>
